@@ -1,0 +1,62 @@
+ self.width = width
+    self.window = window
+
+    #initialisation of board
+    self.window.setBackground('light grey')
+
+    # positions of blocks and current board state
+    self.grid = {}
+  
+  
+  
+  #метод can_move
+  #1. check if it is ok to move to square x,y
+  #if the position is outside of the board boundaries, can't move there
+  #return False
+
+
+  #2. if there is already a block at that postion, can't move there
+  #return False
+
+  #3. otherwise return True
+
+
+
+    #----- block class ----- 
+from graphics import *
+class Block(Rectangle):
+  Block_size = 20
+  Block_outline = 2
+
+  def __init__(self, pos, color):
+
+
+  class Shape():
+  #color
+  #coords
+  #method check if can be rotated
+  #method rotate block
+  #method move
+  #method check if can move in direction
+
+class I_shape(Shape):
+  def __init__(self, center):
+    coords = []
+    Shape.__init__(self, coords, blue)
+# ----- tetris ----
+# поле
+# объекты
+# геймплей (управление)
+# основна программа (проверки на выигрыш и заполненный ряд)
+# обработки ошибок (модуль/функция)
+
+import random
+import graphics
+import sys, time
+from Board import *
+from Block import *
+
+print('game started, program will be below')
+window = graphics.GraphWin('Tetris', 10 * Block.Block_size, 20 * Block.Block_size)
+#window = graphics.GraphWin('Tetris', 100, 200)
+b = Board(window, window.width, window.height)
